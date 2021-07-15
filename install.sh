@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 
-# ---------------- Requirements -------------------
-# GCC >= 5.1.0		(by default on ubuntu >= 16.04)
-# Cmake >= 3.13.4	(done) 
-# python >= 3.6		(by default)
-# zlib >= 1.2.3.4	(done)
-# GNU Make >= 3.8	(by default on ubuntu >= 16.04)
-# ------------------------------------------------
+sudo apt-get update && sudo apt-get upgrade
 
-sudo apt-get update
-sudo apt-get upgrade
 #########################
 # Install cmake && zlib #
 #########################
+
 sudo apt-get -y install cmake zlib
 
 
@@ -47,9 +40,3 @@ sudo apt-get install -y lldb-${PKG_VERSION}
 sudo apt-get install -y lld-${PKG_VERSION}
 # OpenMP
 sudo apt-get install -y libomp-${PKG_VERSION}-dev
-
-
-################################
-# Set clang as default comiler # 
-################################
-
